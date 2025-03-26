@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/30a7f44055.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+        
+    <div class="container">
+        <a href="index.html">
+            <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <h1>Order Your <span>Pizza</span></h1>
+        <form action="submit.html" method="get">
+            <div class="select-container">
+                <label class="select-label" for="select-pizza">Pizza:</label>
+                <div id="select-pizza-container"class="select-body">
+                    <select id="select-pizza" name="pizza">
+                        <option value="" selected disabled>--- Select ---</option>
+                        <option value="chicken-tikka">Chicken Tikka</option>
+                        <option value="eggpep">Egg Pepperoni Pizza</option>
+                        <option value="pepperoni">Pepperoni Pizza</option>
+                        <option value="Vegetable">Vegetable Pizza</option>
+                    </select>    
+                    
+                </div>
+            </div>
+
+            <div class="select-container">
+                <label class="select-label" for="select-size">Size:</label>
+                <div id="select-size-container" class="select-body">
+                    <select id="select-size" name="size">
+                        <option value="" selected disabled>--- Select ---</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="extra-large">Extra-Large</option>
+                    </select>    
+                </div>
+            </div>
+
+            <div class="select-container">
+                <label class="select-label" for="select-cheese">Extra Cheese:</label>
+                <div id="select-cheese-container" class="select-body">
+                    <select id="select-cheese" name="size">
+                        <option value="" selected disabled>--- Select ---</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>    
+                </div>
+            </div>
+
+            <div class="select-container">
+                <label class="select-label" for="select-drinks">Drinks:</label>
+                <div id="select-drinks-container" class="select-body">
+                    <select id="select-drinks" name="size">
+                        <option value="" selected disabled>--- Select ---</option>
+                        <option value="coke">Coke</option>
+                        <option value="pepsi">Pepsi</option>
+                        <option value="sprite">Sprite</option>
+                        <option value="water">Water</option>
+                    </select>    
+                </div>
+            </div>
+
+            <div class="select-container">
+                <label class="select-label" for="select-payment">Payment Method:</label>
+                <div id="select-payment-container" class="select-body">
+                    <select id="select-payment" name="payment">
+                        <option value="" selected disabled>--- Select ---</option>
+                        <option value="online">Online</option>
+                        <option value="cash">Cash</option>
+                        <option value="card">Card</option>
+                    </select>    
+                </div>
+            </div>
+            <input type="submit" value="Place Order" class="place-order">
+        </form> 
+
+    </div>
+</body>
+</html>
